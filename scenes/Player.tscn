@@ -195,9 +195,10 @@ animations = [{
 }]
 
 [node name="Player" type="Node2D"]
+scale = Vector2(3, 3)
 script = ExtResource("1_ukb8h")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_kdcdo")
-animation = &"move_down"
-frame_progress = 0.603992
+animation = &"move_up"
+frame_progress = 0.536344
