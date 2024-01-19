@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://che3uu6hpw6ep"]
+[gd_scene load_steps=30 format=3 uid="uid://che3uu6hpw6ep"]
 
 [ext_resource type="Texture2D" uid="uid://c02742pa1lxdg" path="res://assets/FREE Mana Seed Character Base Demo/char_a_p1/char_a_p1_0bas_humn_v01.png" id="1_1viye"]
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_ukb8h"]
@@ -195,6 +195,10 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="LabelSettings" id="LabelSettings_aab7v"]
+font_size = 10
+font_color = Color(1, 0, 0, 1)
+
 [node name="Player" type="Node2D"]
 scale = Vector2(3, 3)
 script = ExtResource("1_ukb8h")
@@ -207,6 +211,18 @@ flame_decay = 0.1
 sprite_frames = SubResource("SpriteFrames_kdcdo")
 animation = &"move_up"
 frame_progress = 0.885735
+metadata/_edit_lock_ = true
 
 [node name="Flame" type="PointLight2D" parent="."]
+color = Color(1, 0.721569, 0.65098, 1)
 texture = ExtResource("3_p71on")
+metadata/_edit_lock_ = true
+
+[node name="Status" type="Label" parent="."]
+offset_left = -18.0
+offset_top = -34.0
+offset_right = 22.0
+offset_bottom = -11.0
+label_settings = SubResource("LabelSettings_aab7v")
+horizontal_alignment = 1
+vertical_alignment = 1

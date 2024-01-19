@@ -9,7 +9,6 @@ extends Node2D
 var velocity = Vector2.ZERO;
 var light_level: float = 1;
 
-# Called when the node enters the scene tree for the first time.
 var _flicker_value: float = flicker_intensity;
 var flicker_value: float:
 	get:
@@ -28,14 +27,7 @@ func animate_flame():
 	flame_tween.tween_property(self, "flicker_value", -flicker_intensity, flicker_duration / 2)
 	flame_tween.chain().tween_property(self, "flicker_value", flicker_intensity, flicker_duration / 2);
 	flame_tween.tween_callback(animate_flame).set_delay(0)
-
-func _ready():
-	animate_flame();
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	#var move_pressed = false;
+func _process_movement():
 	# player movement
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= speed;
@@ -70,8 +62,22 @@ func _process(delta):
 
 	velocity = Vector2.ZERO;
 
-	# flame
-	$Flame.energy = light_level + flicker_value;
-	$Flame.texture_scale = light_level + flicker_value;
-	light_level = clamp(light_level - (0.01 * delta), 0, 1);
+func _process_flame(delta: float):
+	if Input.is_action_pressed("snuff"):
+		$Flame.energy = 0;
+		$Flame.texture_scale = 0;
+	else:
+		$Flame.energy = light_level + flicker_value;
+		$Flame.texture_scale = light_level + flicker_value;
+		light_level = clamp(light_level - (0.01 * delta), 0, 1);
+func _ready():
+	animate_flame();
 
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	#var move_pressed = false;
+	_process_movement()
+	_process_flame(delta)
+
+	# debug
+	$Status.text = str(round(light_level * 100));
