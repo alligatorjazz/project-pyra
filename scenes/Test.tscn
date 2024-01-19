@@ -1,7 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://ok2aplxe56cb"]
+[gd_scene load_steps=4 format=3 uid="uid://ok2aplxe56cb"]
 
 [ext_resource type="PackedScene" uid="uid://che3uu6hpw6ep" path="res://scenes/Player.tscn" id="1_l257h"]
-[ext_resource type="Texture2D" uid="uid://fbp6dto7n31t" path="res://assets/2d_lights_and_shadows_neutral_point_light.webp" id="2_ua0dm"]
 
 [sub_resource type="Gradient" id="Gradient_sj8r8"]
 offsets = PackedFloat32Array(0.0167015, 0.146138, 0.212944)
@@ -16,6 +15,7 @@ width = 1280
 [node name="Player" parent="." instance=ExtResource("1_l257h")]
 z_index = 10
 position = Vector2(547, 264)
+flame_decay = 0.05
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
@@ -26,10 +26,3 @@ centered = false
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 z_index = 1
 color = Color(0, 0, 0, 1)
-
-[node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(524, 259)
-energy = 2.0
-shadow_enabled = true
-shadow_color = Color(0, 0, 0, 1)
-texture = ExtResource("2_ua0dm")
