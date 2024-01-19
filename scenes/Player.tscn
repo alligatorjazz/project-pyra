@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://che3uu6hpw6ep"]
 
 [ext_resource type="Texture2D" uid="uid://c02742pa1lxdg" path="res://assets/FREE Mana Seed Character Base Demo/char_a_p1/char_a_p1_0bas_humn_v01.png" id="1_1viye"]
-[ext_resource type="Script" path="res://scenes/Player.gd" id="1_ukb8h"]
+[ext_resource type="Script" path="res://scripts/Player.gd" id="1_ukb8h"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4dy7r"]
 atlas = ExtResource("1_1viye")
@@ -197,8 +197,9 @@ animations = [{
 [node name="Player" type="Node2D"]
 scale = Vector2(3, 3)
 script = ExtResource("1_ukb8h")
+speed = 4
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_kdcdo")
 animation = &"move_up"
-frame_progress = 0.536344
+frame_progress = 0.885735
