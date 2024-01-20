@@ -3,8 +3,8 @@
 - their objective is to light a series of lighthouse fires on various islands in an archipelago
 - throughout the entire game the player is managing the dwindling amount of energy they have for the flame
 - while trying to reach these lighthouses, they are beset by various enemy types:
-	- type a: creatures that can see in the dark, but are afraid of light.
-	- type b: creatures that cannot see in the dark, but are attracted to light and will attack the player only when they can see them.
+	- type a: creatures that cannot see in the dark, but are attracted to light and will attack the player only when they can see them. 	
+	- type b: creatures that can see in the dark, but are afraid of light.
 	- type c: creatures that can see in light or dark, and will attack the player regardless of the lighting conditions.
 -  the player has various tools to fight and avoid enemies:
 	- 1. stealth. enemies will only aggro the player once they are in their line-of-sight or close enough, depending on the enemy's behavior toward light
