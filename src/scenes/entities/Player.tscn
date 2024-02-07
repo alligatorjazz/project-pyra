@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c02742pa1lxdg" path="res://assets/FREE Mana Seed Character Base Demo/char_a_p1/char_a_p1_0bas_humn_v01.png" id="1_1viye"]
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_ukb8h"]
-[ext_resource type="Texture2D" uid="uid://fbp6dto7n31t" path="res://assets/2d_lights_and_shadows_neutral_point_light.webp" id="3_p71on"]
+[ext_resource type="PackedScene" uid="uid://ry76x60cnrc1" path="res://scenes/entities/LightSource.tscn" id="3_lorex"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4dy7r"]
 atlas = ExtResource("1_1viye")
@@ -202,20 +202,11 @@ font_color = Color(1, 0, 0, 1)
 [node name="Player" type="Node2D"]
 scale = Vector2(3, 3)
 script = ExtResource("1_ukb8h")
-speed = 4
-flicker_duration = 0.5
-flicker_intensity = 0.01
-flame_decay = 0.1
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_kdcdo")
 animation = &"move_up"
 frame_progress = 0.885735
-metadata/_edit_lock_ = true
-
-[node name="Flame" type="PointLight2D" parent="."]
-color = Color(1, 0.721569, 0.65098, 1)
-texture = ExtResource("3_p71on")
 metadata/_edit_lock_ = true
 
 [node name="Status" type="Label" parent="."]
@@ -226,3 +217,6 @@ offset_bottom = -11.0
 label_settings = SubResource("LabelSettings_aab7v")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Flame" parent="." instance=ExtResource("3_lorex")]
+light_decay = 0.01
