@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd5njxbleab6s"]
+
+[ext_resource type="PackedScene" uid="uid://cdormkxv8o726" path="res://scenes/entities/Creature.tscn" id="1_nstiw"]
+
+[node name="CreatureTest" type="Node2D"]
+
+[node name="Creature" parent="." instance=ExtResource("1_nstiw")]
+position = Vector2(614, 328)

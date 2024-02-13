@@ -1,12 +1,12 @@
 extends Node2D;
 class_name LightSource;
-@export_range(0.0, 1.0) var _light_level: float = 1.0;
+@export_range(0.0, 5.0) var _light_level: float = 1.0;
 const collision_radius = 110;
 var light_level: float:
 	get:
 		return _light_level;
 	set(value):
-		_light_level = clamp(value, 0.0, 1.0);
+		_light_level = max(0, value);
 		($Cone/Collision.shape as CircleShape2D).radius = round(value * collision_radius);
 var texture: Texture:
 	get:

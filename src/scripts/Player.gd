@@ -1,10 +1,9 @@
-extends Node2D
-@export var speed: float = 4;
+extends CharacterBody2D
+@export var speed: float = 250;
 @export var fireball_speed: float = 1024;
 @export var fireball_cost: float = 0.05;
 
 var Fireball: PackedScene = preload("res://scenes/entities/Fireball.tscn");
-var velocity = Vector2.ZERO;
 
 func shoot_fireball(fireball_direction: Vector2):
 	var fireball = Fireball.instantiate();
@@ -29,7 +28,7 @@ func _process_movement():
 		velocity.x += speed;
 		#move_pressed = true;
 
-	position += velocity;
+	move_and_slide()
 
 	# animation handling
 	if velocity.x > 0:
@@ -47,6 +46,7 @@ func _process_movement():
 		$Sprite.play();
 
 	velocity = Vector2.ZERO;
+
 
 func _process_action(snuffed: bool):
 	$Flame.snuffed = snuffed;
@@ -68,3 +68,8 @@ func _process(_delta):
 		str(round($Flame.light_level * 100)),
 		str($Flame.texture.get_size() * $Flame.energy)
 	];
+
+#
+#func _on_collider_body_entered(body: Node2D):
+	#velocity = Vector2.ZERO
+

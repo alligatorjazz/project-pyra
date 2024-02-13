@@ -1,6 +1,6 @@
-[gd_scene load_steps=30 format=3 uid="uid://che3uu6hpw6ep"]
+[gd_scene load_steps=31 format=3 uid="uid://che3uu6hpw6ep"]
 
-[ext_resource type="Texture2D" uid="uid://c02742pa1lxdg" path="res://assets/FREE Mana Seed Character Base Demo/char_a_p1/char_a_p1_0bas_humn_v01.png" id="1_1viye"]
+[ext_resource type="Texture2D" uid="uid://c02742pa1lxdg" path="res://assets/external/FREE Mana Seed Character Base Demo/char_a_p1/char_a_p1_0bas_humn_v01.png" id="1_1viye"]
 [ext_resource type="Script" path="res://scripts/Player.gd" id="1_ukb8h"]
 [ext_resource type="PackedScene" uid="uid://ry76x60cnrc1" path="res://scenes/entities/LightSource.tscn" id="3_lorex"]
 
@@ -199,8 +199,12 @@ animations = [{
 font_size = 10
 font_color = Color(1, 0, 0, 1)
 
-[node name="Player" type="Node2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_a4n0a"]
+radius = 5.0
+
+[node name="Player" type="CharacterBody2D"]
 scale = Vector2(3, 3)
+motion_mode = 1
 script = ExtResource("1_ukb8h")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
@@ -219,4 +223,8 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Flame" parent="." instance=ExtResource("3_lorex")]
-light_decay = 0.01
+_light_level = 1.5
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+position = Vector2(2.08165e-12, 8)
+shape = SubResource("CircleShape2D_a4n0a")

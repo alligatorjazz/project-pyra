@@ -11,16 +11,18 @@ gradient = SubResource("Gradient_sj8r8")
 width = 1280
 
 [node name="Test" type="Node2D"]
-metadata/_edit_group_ = true
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(2.08165e-12, 2.08165e-12)
 scale = Vector2(1, 720)
 texture = SubResource("GradientTexture1D_aqvfi")
 centered = false
+metadata/_edit_lock_ = true
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 z_index = 1
 color = Color(0.462745, 0.462745, 0.462745, 1)
+metadata/_edit_lock_ = true
 
 [node name="Player" parent="." instance=ExtResource("1_e0gka")]
+position = Vector2(590, 274)

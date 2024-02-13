@@ -1,6 +1,6 @@
 [gd_scene load_steps=20 format=3 uid="uid://cdormkxv8o726"]
 
-[ext_resource type="Texture2D" uid="uid://epi4xeonmsci" path="res://assets/Monster Pack 21 (Bovine)/Spritesheets/Updated Boar/Boar_Idle.png" id="1_6hjq3"]
+[ext_resource type="Texture2D" uid="uid://epi4xeonmsci" path="res://assets/external/Monster Pack 21 (Bovine)/Spritesheets/Updated Boar/Boar_Idle.png" id="1_6hjq3"]
 [ext_resource type="Script" path="res://Creature.gd" id="1_sjoox"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3e3jo"]

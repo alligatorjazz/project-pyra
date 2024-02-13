@@ -18,7 +18,7 @@ The player inhabits a pyromancer equipped with various spells that produce or ma
    1. They cannot see in the dark, and they have little in the way of hearing.
    2. They automatically aggress the player and any other non-Cretin enemies in (lit) sight.
    3. They are blinded by max-level illumination.
-2. Beasts: Giant winged bears with vacant eyes.
+2. Beasts: Giant bear-like creatures with six limbs with vacant eyes.
    1. They do not see in the dark, but they can hear the player clamoring around on loud surfaces or interacting with loud puzzle objects.
    2. They typically do not wander, remaining idle they hear or spot prey.
    3. They are blinded by max-level illumination.
