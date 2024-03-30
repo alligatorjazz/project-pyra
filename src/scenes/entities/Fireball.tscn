@@ -1,8 +1,8 @@
 [gd_scene load_steps=65 format=3 uid="uid://c0j2ghvka1jf7"]
 
-[ext_resource type="Texture2D" uid="uid://k2dwhk68li4w" path="res://assets/external/Fires/Fireball_68x9.png" id="1_gdte4"]
-[ext_resource type="Script" path="res://scripts/Fireball.gd" id="1_xmnu7"]
-[ext_resource type="Texture2D" uid="uid://fbp6dto7n31t" path="res://assets/external/2d_lights_and_shadows_neutral_point_light.webp" id="3_bfwww"]
+[ext_resource type="Texture2D" uid="uid://k2dwhk68li4w" path="res://src/assets/external/Fires/Fireball_68x9.png" id="1_gdte4"]
+[ext_resource type="Script" path="res://src/scripts/Fireball.gd" id="1_xmnu7"]
+[ext_resource type="Texture2D" uid="uid://fbp6dto7n31t" path="res://src/assets/external/2d_lights_and_shadows_neutral_point_light.webp" id="3_bfwww"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_omgsr"]
 atlas = ExtResource("1_gdte4")

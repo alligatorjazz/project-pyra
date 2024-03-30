@@ -1,6 +1,6 @@
 [gd_resource type="TileSet" load_steps=3 format=3 uid="uid://c4o54eer3o55p"]
 
-[ext_resource type="Texture2D" uid="uid://dphg5jrv2nksq" path="res://assets/external/tilemap-poppants/tilemap.png" id="1_ppybu"]
+[ext_resource type="Texture2D" uid="uid://dphg5jrv2nksq" path="res://src/assets/external/tilemap-poppants/tilemap.png" id="1_ppybu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r83a1"]
 texture = ExtResource("1_ppybu")
@@ -74,6 +74,8 @@ texture = ExtResource("1_ppybu")
 8:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 8:1/0/physics_layer_0/angular_velocity = 0.0
 9:1/0 = 0
+9:1/0/terrain_set = 0
+9:1/0/terrain = 0
 9:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:1/0/physics_layer_0/angular_velocity = 0.0
 10:1/0 = 0
@@ -178,6 +180,8 @@ texture = ExtResource("1_ppybu")
 5:4/0/physics_layer_0/angular_velocity = 0.0
 5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:4/0 = 0
+6:4/0/terrain_set = 0
+6:4/0/terrain = 0
 6:4/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:4/0/physics_layer_0/angular_velocity = 0.0
 7:4/0 = 0
@@ -199,4 +203,7 @@ texture = ExtResource("1_ppybu")
 [resource]
 physics_layer_0/collision_layer = 3
 physics_layer_0/collision_mask = 3
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Terrain 0"
+terrain_set_0/terrain_0/color = Color(0.490196, 0.207843, 0.733333, 1)
 sources/0 = SubResource("TileSetAtlasSource_r83a1")

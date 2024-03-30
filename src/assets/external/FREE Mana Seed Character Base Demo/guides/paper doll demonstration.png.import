@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgdxwuthvoutb"
-path="res://.godot/imported/paper doll demonstration.png-141e2c59a15f8809dd89d31093258a3b.ctex"
+path="res://.godot/imported/paper doll demonstration.png-65ed4bb4777b8e5b09df9e61df973e79.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/external/FREE Mana Seed Character Base Demo/guides/paper doll demonstration.png"
-dest_files=["res://.godot/imported/paper doll demonstration.png-141e2c59a15f8809dd89d31093258a3b.ctex"]
+source_file="res://src/assets/external/FREE Mana Seed Character Base Demo/guides/paper doll demonstration.png"
+dest_files=["res://.godot/imported/paper doll demonstration.png-65ed4bb4777b8e5b09df9e61df973e79.ctex"]
 
 [params]
 

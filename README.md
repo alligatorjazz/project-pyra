@@ -14,7 +14,7 @@ The player inhabits a pyromancer equipped with various spells that produce or ma
 
 ### The Enemies
 (TODO: Flesh out enemy descriptions.)
-1. Cretins: Hyena-esque quadrupedal creatures with grotesque spots and the horns of a jackalope. 
+1. Cretins: Hyena-esque quadrupedal creatures with grotesque spots and the horns of a jackalope.
    1. They cannot see in the dark, and they have little in the way of hearing.
    2. They automatically aggress the player and any other non-Cretin enemies in (lit) sight.
    3. They are blinded by max-level illumination.
@@ -31,7 +31,7 @@ The player inhabits a pyromancer equipped with various spells that produce or ma
    2. They have set patrol paths, but actively pursue the player in hiding places. They can also commandeer nearby sentries to do their bidding, augmenting their existing abilities.
    3. They are only blinded by max-level illumination when ambushed - they will shield their eyes if they can see the player charging it.
 5. Frost Legate: The only other magic wielders in the game.
-   1. They possess all the properties of the Commandant, but can issue commands to them as well. 
+   1. They possess all the properties of the Commandant, but can issue commands to them as well.
    2. Instead of the Commandant's melee attack, they possess a ranged ice blast.
    3. They have the same super jump the player has, allowing them to pursue them up cliffs and over gaps.
 
@@ -61,8 +61,8 @@ The islands have the visual character of Great Britain, particularly the [Scotti
 ## Further Reading / Reference Games
 
 ### Light and Shadow Mechanics
-- Thief: The Dark Project / Thief II 
-- Splinter Cell: Chaos Theory 
+- Thief: The Dark Project / Thief II
+- Splinter Cell: Chaos Theory
 
 ### Reactive Environments / Naturalistic Stealth
 - Metal Gear Solid 3

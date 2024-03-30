@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pq1hqn0pvsgq"
-path="res://.godot/imported/Boar_Attack_Loop.png-fbc9a8ae68baaa9afb8df7983d69e589.ctex"
+path="res://.godot/imported/Boar_Attack_Loop.png-3511a32cc82a42d685019c39dcbcdd7b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/external/Monster Pack 21 (Bovine)/Spritesheets/Old Versions/Boar/Boar_Attack_Loop.png"
-dest_files=["res://.godot/imported/Boar_Attack_Loop.png-fbc9a8ae68baaa9afb8df7983d69e589.ctex"]
+source_file="res://src/assets/external/Monster Pack 21 (Bovine)/Spritesheets/Old Versions/Boar/Boar_Attack_Loop.png"
+dest_files=["res://.godot/imported/Boar_Attack_Loop.png-3511a32cc82a42d685019c39dcbcdd7b.ctex"]
 
 [params]
 

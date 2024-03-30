@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var fireball_speed: float = 1024;
 @export var fireball_cost: float = 0.05;
 
-var Fireball: PackedScene = preload("res://scenes/entities/Fireball.tscn");
+var Fireball: PackedScene = preload("res://src/scenes/entities/Fireball.tscn");
 
 func shoot_fireball(fireball_direction: Vector2):
 	var fireball = Fireball.instantiate();

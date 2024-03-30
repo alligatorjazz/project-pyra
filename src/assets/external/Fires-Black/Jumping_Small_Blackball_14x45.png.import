@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwiamxuyyvcvs"
-path="res://.godot/imported/Jumping_Small_Blackball_14x45.png-a35acc86fcc1759f755b1dbeb89e7558.ctex"
+path="res://.godot/imported/Jumping_Small_Blackball_14x45.png-88310017b66734209e2e8ed004badd70.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/external/Fires-Black/Jumping_Small_Blackball_14x45.png"
-dest_files=["res://.godot/imported/Jumping_Small_Blackball_14x45.png-a35acc86fcc1759f755b1dbeb89e7558.ctex"]
+source_file="res://src/assets/external/Fires-Black/Jumping_Small_Blackball_14x45.png"
+dest_files=["res://.godot/imported/Jumping_Small_Blackball_14x45.png-88310017b66734209e2e8ed004badd70.ctex"]
 
 [params]
 

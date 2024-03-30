@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://8xjue0ibisk"
-path="res://.godot/imported/Poisonball_65x9.png-48eb5477fb6ed6b993e949e2389ba05f.ctex"
+path="res://.godot/imported/Poisonball_65x9.png-4f107829abca34246fa92757c105177d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/external/Fires/Poisonball_65x9.png"
-dest_files=["res://.godot/imported/Poisonball_65x9.png-48eb5477fb6ed6b993e949e2389ba05f.ctex"]
+source_file="res://src/assets/external/Fires/Poisonball_65x9.png"
+dest_files=["res://.godot/imported/Poisonball_65x9.png-4f107829abca34246fa92757c105177d.ctex"]
 
 [params]
 

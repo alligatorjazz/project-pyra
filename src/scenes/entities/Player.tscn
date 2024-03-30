@@ -1,8 +1,8 @@
 [gd_scene load_steps=31 format=3 uid="uid://che3uu6hpw6ep"]
 
-[ext_resource type="Texture2D" uid="uid://c02742pa1lxdg" path="res://assets/external/FREE Mana Seed Character Base Demo/char_a_p1/char_a_p1_0bas_humn_v01.png" id="1_1viye"]
-[ext_resource type="Script" path="res://scripts/Player.gd" id="1_ukb8h"]
-[ext_resource type="PackedScene" uid="uid://ry76x60cnrc1" path="res://scenes/entities/LightSource.tscn" id="3_lorex"]
+[ext_resource type="Texture2D" uid="uid://c02742pa1lxdg" path="res://src/assets/external/FREE Mana Seed Character Base Demo/char_a_p1/char_a_p1_0bas_humn_v01.png" id="1_1viye"]
+[ext_resource type="Script" path="res://src/scripts/Player.gd" id="1_ukb8h"]
+[ext_resource type="PackedScene" uid="uid://ry76x60cnrc1" path="res://src/scenes/entities/LightSource.tscn" id="3_lorex"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4dy7r"]
 atlas = ExtResource("1_1viye")
@@ -225,6 +225,6 @@ vertical_alignment = 1
 [node name="Flame" parent="." instance=ExtResource("3_lorex")]
 _light_level = 1.5
 
-[node name="Shape" type="CollisionShape2D" parent="."]
+[node name="Hitbox" type="CollisionShape2D" parent="."]
 position = Vector2(2.08165e-12, 8)
 shape = SubResource("CircleShape2D_a4n0a")

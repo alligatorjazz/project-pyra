@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmhyl2giq3crm"
-path="res://.godot/imported/Piggy_Idle.png-c4723213571abcae63c2fa012257fcf3.ctex"
+path="res://.godot/imported/Piggy_Idle.png-ac824ebb1c4edc14dd9938627b116276.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/external/Monster Pack 21 (Bovine)/Spritesheets/Updated Piggy/Piggy_Idle.png"
-dest_files=["res://.godot/imported/Piggy_Idle.png-c4723213571abcae63c2fa012257fcf3.ctex"]
+source_file="res://src/assets/external/Monster Pack 21 (Bovine)/Spritesheets/Updated Piggy/Piggy_Idle.png"
+dest_files=["res://.godot/imported/Piggy_Idle.png-ac824ebb1c4edc14dd9938627b116276.ctex"]
 
 [params]
 
