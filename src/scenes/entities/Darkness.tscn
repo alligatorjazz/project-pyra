@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://d1l22s3bvjjo0"]
-
-[node name="Darkness" type="CanvasModulate"]
-z_index = 1
-color = Color(0.0784314, 0.0784314, 0.0784314, 1)
-metadata/_edit_lock_ = true
