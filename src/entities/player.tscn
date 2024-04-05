@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://b8e2xr4qjuucc"]
+
+[ext_resource type="Script" path="res://src/entities/player.gd" id="1_43htq"]
+[ext_resource type="PackedScene" uid="uid://en4oqvl10uyk" path="res://assets/squash_the_creeps_start_1.1.0/art/player.glb" id="2_i2tbs"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xcq7q"]
+radius = 0.8
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_i4n4t"]
+height = 0.5
+radius = 1.5
+
+[node name="Player" type="CharacterBody3D"]
+collision_mask = 6
+script = ExtResource("1_43htq")
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="Character" parent="Pivot" instance=ExtResource("2_i2tbs")]
+
+[node name="Hitbox" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.386032, 0)
+shape = SubResource("SphereShape3D_xcq7q")
+
+[node name="MobDetector" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.178798, 0)
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="MobDetector"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.86822, 0)
+shape = SubResource("CylinderShape3D_i4n4t")
+
+[connection signal="body_entered" from="MobDetector" to="." method="_on_mob_detector_body_entered"]

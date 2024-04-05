@@ -1,0 +1,59 @@
+[gd_scene load_steps=7 format=3 uid="uid://dyoiamb14n3dt"]
+
+[ext_resource type="Script" path="res://src/maps/main.gd" id="1_llp38"]
+[ext_resource type="PackedScene" uid="uid://b8e2xr4qjuucc" path="res://src/entities/player.tscn" id="1_ua2q5"]
+[ext_resource type="PackedScene" uid="uid://bkhwfqlhpuhwr" path="res://src/entities/mob.tscn" id="2_xgteu"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5j3d7"]
+size = Vector3(60, 2, 60)
+
+[sub_resource type="BoxMesh" id="BoxMesh_h57n1"]
+size = Vector3(60, 2, 60)
+
+[sub_resource type="Curve3D" id="Curve3D_h0cck"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -13, 2.08165e-12, -13, 0, 0, 0, 0, 0, 0, 13, 2.08165e-12, -13, 0, 0, 0, 0, 0, 0, 13, 2.08165e-12, 13, 0, 0, 0, 0, 0, 0, -13, 2.08165e-12, 13, 0, 0, 0, 0, 0, 0, -13, 2.08165e-12, -13),
+"tilts": PackedFloat32Array(0, 0, 0, 0, 0)
+}
+point_count = 5
+
+[node name="Main" type="Node"]
+script = ExtResource("1_llp38")
+mob_scene = ExtResource("2_xgteu")
+
+[node name="Ground" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, -1, 2.08165e-12)
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("BoxShape3D_5j3d7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("BoxMesh_h57n1")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.176655, 0.984273, 0, -0.984273, 0.176655, 0, 27.9602, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_ua2q5")]
+
+[node name="CameraPivot" type="Marker3D" parent="."]
+transform = Transform3D(1, -5.95416e-16, 2.4663e-16, 2.4663e-16, 0.707107, 0.707107, -5.95416e-16, -0.707107, 0.707107, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 19)
+projection = 1
+size = 19.0
+
+[node name="SpawnPath" type="Path3D" parent="."]
+curve = SubResource("Curve3D_h0cck")
+
+[node name="SpawnLocation" type="PathFollow3D" parent="SpawnPath"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -13, 2.08165e-12, -13)
+
+[node name="MobTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
