@@ -4,7 +4,12 @@
 Project Pyra is a stealth action game about a lonely pyromancer who must traverse a perilous archipelago to reignite a collection of dormant lighthouses. The game's core loop centers around the way that enemies, the environment, and the player character react to fire and light.
 
 ## Gameplay
-
+### Actions
+- Move
+  - Sprint
+- Snuff (RMB)
+- Fire (LMB)
+- Dash (SPC)
 ### The Player
 The player inhabits a pyromancer equipped with various spells that produce or manipulate fire. At first, the spells the player have access to are extremely minimal, but they gain strength and potency with each lighthouse the player successfully reignites.
 1. **Illumination**: The pyromancer can illuminate an area immediately surrounding them. While this allows the player to see their surroundings, it also reveals their position to nearby enemies. As the ability grows more powerful, the illuminated area gradually increases. At its maximum power, the illumination can be charged to execute a flashbang attack that stuns most enemies.
